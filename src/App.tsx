@@ -1,25 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from 'react';
+import { NavContext } from './store/nav-context';
+import Layout from './components/Layout';
+import Section from './components/Section';
+import Navigation from './components/Navigation';
+import { StyledTitlePage, StyledSectionContainer, StyledTitleContainer, StyledTitle, StyledSubTitle, StyledJumpToNavigationButton } from './shared/styledComponents';
+import StyledKeyboardArrowDown from './shared/styledKeyboardArrowDown';
 
 function App() {
+  const navContext = useContext(NavContext);
+
+  const handleJumpToNavigationClick = () => {
+    navContext.sections[0].element.scrollIntoView({ behavior: 'smooth' });
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Layout>
+        <StyledTitlePage>
+          <StyledTitleContainer>
+            <StyledTitle>Modestas Kairys</StyledTitle>
+            <StyledSubTitle>resume</StyledSubTitle>
+          </StyledTitleContainer>
+          <StyledJumpToNavigationButton onClick={handleJumpToNavigationClick}><StyledKeyboardArrowDown /></StyledJumpToNavigationButton>
+        </ StyledTitlePage>
+        <StyledSectionContainer>
+          <Navigation />
+          <Section name={'Profile'} subtitle={"I'm an enthusiasthic JavaScript developer"}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis finibus tellus quis auctor. Donec eleifend velit tellus. Fusce varius ligula a nulla aliquet, ac lacinia odio ultrices. Morbi in dui massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ullamcorper fermentum mi in volutpat. Cras pellentesque varius interdum. Morbi erat eros, blandit sed volutpat sed, laoreet nec risus. Sed semper velit quam. Sed vulputate risus sit amet commodo tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis finibus tellus quis auctor. Donec eleifend velit tellus. Fusce varius ligula a nulla aliquet, ac lacinia odio ultrices. Morbi in dui massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ullamcorper fermentum mi in volutpat. Cras pellentesque varius interdum. Morbi erat eros, blandit sed volutpat sed, laoreet nec risus. Sed semper velit quam. Sed vulputate risus sit amet commodo tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis finibus tellus quis auctor. Donec eleifend velit tellus. Fusce varius ligula a nulla aliquet, ac lacinia odio ultrices. Morbi in dui massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ullamcorper fermentum mi in volutpat. Cras pellentesque varius interdum. Morbi erat eros, blandit sed volutpat sed, laoreet nec risus. Sed semper velit quam. Sed vulputate risus sit amet commodo tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis finibus tellus quis auctor. Donec eleifend velit tellus. Fusce varius ligula a nulla aliquet, ac lacinia odio ultrices. Morbi in dui massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ullamcorper fermentum mi in volutpat. Cras pellentesque varius interdum. Morbi erat eros, blandit sed volutpat sed, laoreet nec risus. Sed semper velit quam. Sed vulputate risus sit amet commodo tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis finibus tellus quis auctor. Donec eleifend velit tellus. Fusce varius ligula a nulla aliquet, ac lacinia odio ultrices. Morbi in dui massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ullamcorper fermentum mi in volutpat. Cras pellentesque varius interdum. Morbi erat eros, blandit sed volutpat sed, laoreet nec risus. Sed semper velit quam. Sed vulputate risus sit amet commodo tristique. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis finibus tellus quis auctor. Donec eleifend velit tellus. Fusce varius ligula a nulla aliquet, ac lacinia odio ultrices. Morbi in dui massa. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla ullamcorper fermentum mi in volutpat. Cras pellentesque varius interdum. Morbi erat eros, blandit sed volutpat sed, laoreet nec risus. Sed semper velit quam. Sed vulputate risus sit amet commodo tristique.
+          </Section>
+          <Section name={'Education'}>
+              Mauris volutpat tellus at ante mollis, non condimentum metus dignissim. Morbi malesuada tristique dignissim. Cras rutrum porta augue tempus viverra. Vestibulum pulvinar est nibh, laoreet tempor risus fringilla in. Etiam ut velit sem. Fusce at ullamcorper justo, quis sagittis nunc. Fusce in tortor nec neque volutpat imperdiet. Nunc dolor arcu, vestibulum a mattis et, imperdiet vulputate enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus egestas erat non hendrerit tincidunt. Mauris volutpat tellus at ante mollis, non condimentum metus dignissim. Morbi malesuada tristique dignissim. Cras rutrum porta augue tempus viverra. Vestibulum pulvinar est nibh, laoreet tempor risus fringilla in. Etiam ut velit sem. Fusce at ullamcorper justo, quis sagittis nunc. Fusce in tortor nec neque volutpat imperdiet. Nunc dolor arcu, vestibulum a mattis et, imperdiet vulputate enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus egestas erat non hendrerit tincidunt. Mauris volutpat tellus at ante mollis, non condimentum metus dignissim. Morbi malesuada tristique dignissim. Cras rutrum porta augue tempus viverra. Vestibulum pulvinar est nibh, laoreet tempor risus fringilla in. Etiam ut velit sem. Fusce at ullamcorper justo, quis sagittis nunc. Fusce in tortor nec neque volutpat imperdiet. Nunc dolor arcu, vestibulum a mattis et, imperdiet vulputate enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus egestas erat non hendrerit tincidunt. Mauris volutpat tellus at ante mollis, non condimentum metus dignissim. Morbi malesuada tristique dignissim. Cras rutrum porta augue tempus viverra. Vestibulum pulvinar est nibh, laoreet tempor risus fringilla in. Etiam ut velit sem. Fusce at ullamcorper justo, quis sagittis nunc. Fusce in tortor nec neque volutpat imperdiet. Nunc dolor arcu, vestibulum a mattis et, imperdiet vulputate enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus egestas erat non hendrerit tincidunt. Mauris volutpat tellus at ante mollis, non condimentum metus dignissim. Morbi malesuada tristique dignissim. Cras rutrum porta augue tempus viverra. Vestibulum pulvinar est nibh, laoreet tempor risus fringilla in. Etiam ut velit sem. Fusce at ullamcorper justo, quis sagittis nunc. Fusce in tortor nec neque volutpat imperdiet. Nunc dolor arcu, vestibulum a mattis et, imperdiet vulputate enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus egestas erat non hendrerit tincidunt. Mauris volutpat tellus at ante mollis, non condimentum metus dignissim. Morbi malesuada tristique dignissim. Cras rutrum porta augue tempus viverra. Vestibulum pulvinar est nibh, laoreet tempor risus fringilla in. Etiam ut velit sem. Fusce at ullamcorper justo, quis sagittis nunc. Fusce in tortor nec neque volutpat imperdiet. Nunc dolor arcu, vestibulum a mattis et, imperdiet vulputate enim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus egestas erat non hendrerit tincidunt.
+          </Section>
+          <Section name={'Experience'}>
+              Quisque pellentesque lacus nec ex fermentum egestas. Nullam pretium orci tempus gravida mollis. Etiam hendrerit mi eu bibendum consequat. Etiam vehicula id est quis hendrerit. Pellentesque dapibus venenatis risus, id gravida neque. Nunc a leo vitae velit auctor malesuada sit amet a turpis. Nunc massa enim, ullamcorper at convallis eu, sodales nec tortor. Integer porttitor urna lectus, ultrices vulputate dolor consectetur consectetur. Ut commodo suscipit nisi, sed interdum tortor imperdiet convallis. Nunc lorem leo, dapibus ac pretium eget, fermentum id massa. Quisque pellentesque lacus nec ex fermentum egestas. Nullam pretium orci tempus gravida mollis. Etiam hendrerit mi eu bibendum consequat. Etiam vehicula id est quis hendrerit. Pellentesque dapibus venenatis risus, id gravida neque. Nunc a leo vitae velit auctor malesuada sit amet a turpis. Nunc massa enim, ullamcorper at convallis eu, sodales nec tortor. Integer porttitor urna lectus, ultrices vulputate dolor consectetur consectetur. Ut commodo suscipit nisi, sed interdum tortor imperdiet convallis. Nunc lorem leo, dapibus ac pretium eget, fermentum id massa. Quisque pellentesque lacus nec ex fermentum egestas. Nullam pretium orci tempus gravida mollis. Etiam hendrerit mi eu bibendum consequat. Etiam vehicula id est quis hendrerit. Pellentesque dapibus venenatis risus, id gravida neque. Nunc a leo vitae velit auctor malesuada sit amet a turpis. Nunc massa enim, ullamcorper at convallis eu, sodales nec tortor. Integer porttitor urna lectus, ultrices vulputate dolor consectetur consectetur. Ut commodo suscipit nisi, sed interdum tortor imperdiet convallis. Nunc lorem leo, dapibus ac pretium eget, fermentum id massa. Quisque pellentesque lacus nec ex fermentum egestas. Nullam pretium orci tempus gravida mollis. Etiam hendrerit mi eu bibendum consequat. Etiam vehicula id est quis hendrerit. Pellentesque dapibus venenatis risus, id gravida neque. Nunc a leo vitae velit auctor malesuada sit amet a turpis. Nunc massa enim, ullamcorper at convallis eu, sodales nec tortor. Integer porttitor urna lectus, ultrices vulputate dolor consectetur consectetur. Ut commodo suscipit nisi, sed interdum tortor imperdiet convallis. Nunc lorem leo, dapibus ac pretium eget, fermentum id massa. Quisque pellentesque lacus nec ex fermentum egestas. Nullam pretium orci tempus gravida mollis. Etiam hendrerit mi eu bibendum consequat. Etiam vehicula id est quis hendrerit. Pellentesque dapibus venenatis risus, id gravida neque. Nunc a leo vitae velit auctor malesuada sit amet a turpis. Nunc massa enim, ullamcorper at convallis eu, sodales nec tortor. Integer porttitor urna lectus, ultrices vulputate dolor consectetur consectetur. Ut commodo suscipit nisi, sed interdum tortor imperdiet convallis. Nunc lorem leo, dapibus ac pretium eget, fermentum id massa. Quisque pellentesque lacus nec ex fermentum egestas. Nullam pretium orci tempus gravida mollis. Etiam hendrerit mi eu bibendum consequat. Etiam vehicula id est quis hendrerit. Pellentesque dapibus venenatis risus, id gravida neque. Nunc a leo vitae velit auctor malesuada sit amet a turpis. Nunc massa enim, ullamcorper at convallis eu, sodales nec tortor. Integer porttitor urna lectus, ultrices vulputate dolor consectetur consectetur. Ut commodo suscipit nisi, sed interdum tortor imperdiet convallis. Nunc lorem leo, dapibus ac pretium eget, fermentum id massa.
+          </Section>
+        </StyledSectionContainer>
+      </Layout>
   );
 }
 
