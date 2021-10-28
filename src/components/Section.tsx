@@ -3,7 +3,7 @@ import { StyledSection, StyledSectionTitle, StyledSectionSubTitle, StyledText } 
 import {NavContext} from '../store/nav-context';
 import sectionObj from '../models/sectionObj';
 
-const Section: React.FC<{name: string, subtitle?: string}> = ({ name, subtitle, children }) => {
+const Section: React.FC<{name: string, subtitle?: string, paddingBottom?: string}> = ({ name, subtitle, paddingBottom, children }) => {
     const navContext = useContext(NavContext);
     const sectionRef = useRef<HTMLDivElement>(null);
 
@@ -13,7 +13,7 @@ const Section: React.FC<{name: string, subtitle?: string}> = ({ name, subtitle, 
         }
     }, []);
 
-    return <StyledSection ref={sectionRef}>
+    return <StyledSection ref={sectionRef} paddingBottom={paddingBottom}>
         <StyledSectionTitle>{name}</StyledSectionTitle>
         <StyledSectionSubTitle>{subtitle}</ StyledSectionSubTitle>
         <StyledText>{children}</StyledText>

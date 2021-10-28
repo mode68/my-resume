@@ -32,8 +32,8 @@ const Navigation: React.FC = () => {
         }
     }, [navContext.sections, activeButtonIndex]);
 
-    const debouncedNavigationDetacher = useMemo(() => debounce(navigationDetacher, 20), [navigationDetacher]);
-    const debouncedNavigationActiveClassApplier = useMemo(() => debounce(navigationActiveClassApplier, 50), [navigationActiveClassApplier]);
+    const debouncedNavigationDetacher = useMemo(() => debounce(navigationDetacher, 10), [navigationDetacher]);
+    const debouncedNavigationActiveClassApplier = useMemo(() => debounce(navigationActiveClassApplier, 10), [navigationActiveClassApplier]);
     
     useEffect(() => {
         document.addEventListener('scroll', debouncedNavigationDetacher);
