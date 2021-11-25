@@ -1,7 +1,7 @@
-import { StyledContainer } from '../shared/styledComponents';
+import { StyledLayoutContainer } from '../shared/styled/LayoutComponents';
 
 const Layout: React.FC = ({ children }) => {
-	return <StyledContainer>{children}</StyledContainer>;
+	return <StyledLayoutContainer>{children}</StyledLayoutContainer>;
 };
 
 export default Layout;

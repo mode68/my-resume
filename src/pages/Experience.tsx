@@ -1,5 +1,10 @@
 import Section from '../components/Section';
-import { StyledSubtitle, StyledSmallestSubtitle, StyledColumn, StyledFlexContainer } from '../shared/styledComponents';
+import {
+	StyledSubtitle,
+	StyledSmallestSubtitle,
+	StyledColumn,
+	StyledFlexContainer,
+} from '../shared/styled/GeneralComponents';
 
 const Experience = () => {
 	return (

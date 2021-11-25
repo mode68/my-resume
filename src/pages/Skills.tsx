@@ -1,5 +1,11 @@
 import Section from '../components/Section';
-import { StyledColumn, StyledFlexContainer, StyledSubtitle, StyledUl, StyledLi } from '../shared/styledComponents';
+import {
+	StyledColumn,
+	StyledFlexContainer,
+	StyledSubtitle,
+	StyledUl,
+	StyledLi,
+} from '../shared/styled/GeneralComponents';
 import StarScore from '../components/StarScore';
 
 const Skills = () => {

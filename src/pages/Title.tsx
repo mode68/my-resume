@@ -4,10 +4,10 @@ import {
 	StyledTitlePage,
 	StyledTitleContainer,
 	StyledTitle,
-	StyledSubTitle,
+	StyledSubtitle,
 	StyledJumpToNavigationButton,
-} from '../shared/styledComponents';
-import StyledKeyboardArrowDown from '../shared/styledKeyboardArrowDown';
+} from '../shared/styled/TitlePageComponents';
+import StyledKeyboardArrowDown from '../shared/styled/KeyboardArrowDown';
 
 const Title = () => {
 	const navContext = useContext(NavContext);
@@ -20,7 +20,7 @@ const Title = () => {
 		<StyledTitlePage>
 			<StyledTitleContainer>
 				<StyledTitle>Modestas Kairys</StyledTitle>
-				<StyledSubTitle>resume</StyledSubTitle>
+				<StyledSubtitle>resume</StyledSubtitle>
 			</StyledTitleContainer>
 			<StyledJumpToNavigationButton onClick={handleJumpToNavigationClick}>
 				<StyledKeyboardArrowDown />

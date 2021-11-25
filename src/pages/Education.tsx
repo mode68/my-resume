@@ -1,5 +1,5 @@
 import Section from '../components/Section';
-import { StyledSubtitle, StyledColumn, StyledFlexContainer } from '../shared/styledComponents';
+import { StyledSubtitle, StyledColumn, StyledFlexContainer } from '../shared/styled/GeneralComponents';
 
 const Education = () => {
 	return (

@@ -1,5 +1,6 @@
 import { useRef, useEffect, useContext } from 'react';
-import { StyledSection, StyledSectionTitle, StyledSectionSubTitle, StyledText } from '../shared/styledComponents';
+import { StyledText } from '../shared/styled/GeneralComponents';
+import { StyledSection, StyledSectionTitle, StyledSectionSubTitle } from '../shared/styled/SectionComponents';
 import { NavContext } from '../store/nav-context';
 import { SectionObj } from '../models/sectionObj';
 

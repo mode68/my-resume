@@ -1,4 +1,4 @@
-import { StyledMobileMenuButton } from '../shared/styledComponents';
+import { StyledMobileMenuButton } from '../shared/styled/MobileNavigationComponents';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 

@@ -1,6 +1,6 @@
 import StarIcon from '@mui/icons-material/Star';
 import StarOutline from '@mui/icons-material/StarOutline';
-import { StyledStarScore, StyledStarScoreSpan } from '../shared/styledComponents';
+import { StyledStarScore, StyledStarScoreSpan } from '../shared/styled/StarScoreComponents';
 
 const StarScore: React.FC<{ name: string; score: number }> = ({ name, score }) => {
 	let rating = [];
