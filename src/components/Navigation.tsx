@@ -1,6 +1,6 @@
 import { useContext, useMemo, useState, useEffect, useRef, useCallback } from 'react';
 import debounce from 'lodash/debounce';
-import { StyledNavBarContainer, StyledNavBar, StyledNavButton } from '../shared/styledComponents';
+import { StyledNavBarContainer, StyledNavBar, StyledNavButton } from '../shared/styled/NavigationComponents';
 import MobileNavigation from './MobileNavigation';
 import { isInViewport } from '../shared/utils';
 import { NavContext } from '../store/nav-context';

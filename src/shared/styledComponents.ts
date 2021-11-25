@@ -25,58 +25,6 @@ export const device = {
 	desktopL: `(min-width: ${deviceSize.desktopL})`,
 };
 
-export const StyledNavBarContainer = styled.div<{ detached: boolean; isMobile: boolean }>`
-	${(props) =>
-		props.isMobile &&
-		css`
-			padding: 10px;
-		`}
-	${(props) =>
-		props.detached &&
-		css`
-			position: fixed;
-			width: ${props.isMobile ? 'auto' : '100%'};
-			top: ${props.isMobile ? '0' : '10%'};
-		`}
-    ${(props) =>
-		!props.detached &&
-		css`
-			position: absolute;
-			width: ${props.isMobile ? 'auto' : '100%'};
-		`}
-`;
-
-export const StyledNavBar = styled.div`
-	float: right;
-	margin-right: 5%;
-	border: 2px solid ${tertiaryColor};
-`;
-
-export const StyledNavButton = styled.button`
-	color: ${primaryColor};
-	background: ${secondaryColor};
-	border: none;
-	width: 120px;
-	height: 80px;
-	font-weight: 700;
-	text-align: center;
-	text-decoration: none;
-	outline: 0;
-	font-size: 1rem;
-	padding: 10px 5px;
-	display: block;
-
-	&.active {
-		background-color: ${primaryColor};
-		color: white;
-	}
-
-	&:hover {
-		cursor: pointer;
-		color: ${tertiaryColor};
-	}
-`;
-
 export const StyledContainer = styled.div`
 	width: 100%;
 	height: 100vh;
