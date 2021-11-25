@@ -9,12 +9,12 @@ const Skills = () => {
     return (
         <Section name={'Skills'} subtitle={"Not a game. We talking about practice."}>
             <StyledFlexContainer>
-                <StyledColumn flexPercentage='50%'>
+                <StyledColumn flexPercentage='47%'>
                     <StyledUl>
                         {skills.map(skill => <StyledLi key={skill.name}><StarScore name={skill.name} score={skill.rating} /></StyledLi>)}
                     </StyledUl>
                 </StyledColumn>
-                <StyledColumn flexPercentage='50%'>
+                <StyledColumn flexPercentage='47%'>
                     <StyledUl>
                         {skills2.map(skill => <StyledLi key={skill.name}><StarScore name={skill.name} score={skill.rating} /></StyledLi>)}
                     </StyledUl>
@@ -22,7 +22,7 @@ const Skills = () => {
             </StyledFlexContainer>
             <StyledSubtitle>Languages</StyledSubtitle>
             <StyledFlexContainer>
-                <StyledColumn flexPercentage='50%'>
+                <StyledColumn flexPercentage='47%'>
                     <StyledUl>
                         {languages.map(skill => <StyledLi key={skill.name}><StarScore name={skill.name} score={skill.rating} /></StyledLi>)}
                     </StyledUl>

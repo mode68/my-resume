@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import sectionObj from '../models/sectionObj';
+import { SectionObj } from '../models/sectionObj';
 
 type NavContextObj = {
-    sections: sectionObj[];
-    addSection: (newSection: sectionObj) => void;
+    sections: SectionObj[];
+    addSection: (newSection: SectionObj) => void;
 }
 
 export const NavContext = React.createContext<NavContextObj>({
@@ -12,10 +12,10 @@ export const NavContext = React.createContext<NavContextObj>({
 })
 
 const NavContextProvider: React.FC = (props) => {
-    const [sections, setSections] = useState<sectionObj[]>([]);
+    const [sections, setSections] = useState<SectionObj[]>([]);
 
 
-    const addSectionHandler = (newSection: sectionObj) => {
+    const addSectionHandler = (newSection: SectionObj) => {
         setSections((prevSections) => {
             return prevSections.concat(newSection)
         })

@@ -1,5 +1,5 @@
 import Section from '../components/Section';
-import { AlternateEmail, LinkedIn, GitHub } from '@material-ui/icons';
+import { AlternateEmail, LinkedIn, GitHub } from '@mui/icons-material';
 import { StyledUl, StyledLi, StyledContactLink } from '../shared/styledComponents';
 
 const Contact = () => {

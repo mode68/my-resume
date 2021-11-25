@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import { KeyboardArrowDown } from '@material-ui/icons';
+import { KeyboardArrowDown } from '@mui/icons-material';
 
 const heartbeatAnimation = keyframes`
   from {
