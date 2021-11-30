@@ -11,7 +11,7 @@ const Education = () => {
 				<StyledColumn flexPercentage='65%'>
 					10th grade was probably my first introduction to programming. Our highschool had mandaroty
 					curriculum where we were taught some basic programming concepts (like for/while loops) in Pascal
-					language. It soon became one of my favorite classes (together with PE of course), I continued taking
+					language. It soon became one of my favorite classes (together with PE of course). I continued taking
 					it in later grades when it became an optional class.
 				</StyledColumn>
 			</StyledFlexContainer>
@@ -23,7 +23,7 @@ const Education = () => {
 					I entered Software Engineering course where we learned advanced programming basics using Java.
 					Obviously working as a programmer is not just about writing code, you need to understand business
 					logic, learn how to visualize it and know how to work in a team. I feel all of these things were
-					well covered by our University program. There were some questionable courses, like learning by heart
+					well covered by our university program. There were some questionable courses, like learning by heart
 					most of Microsoft Office buttons (don't ask why, I don't know either), but most of it was quite
 					useful.
 				</StyledColumn>

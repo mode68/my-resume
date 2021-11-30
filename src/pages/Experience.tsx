@@ -20,11 +20,11 @@ const Experience = () => {
 				</StyledColumn>
 				<StyledColumn flexPercentage='65%'>
 					<StyledSmallestSubtitle>Full time - Software Engineer</StyledSmallestSubtitle>My first real job
-					right before graduating university. Company provided custom SharePoint solutions to their clients.
-					Since Amidus wasn't very big, we as developers were able to get our hands on the whole project
-					scope, being versatile was important. My main responsibilities included writing backend services on
-					.NET, various scripting tasks using PowerShell, filling out documentations and later on I even got
-					to dabble with some frontend JavaScript. Back then I was more orientated as a backend developer.
+					right before graduating university. Our company provided custom SharePoint solutions. Since Amidus
+					wasn't very big, we as developers were able to get our hands on the whole project scope, being
+					versatile was important. My main responsibilities included writing backend services on .NET, various
+					scripting tasks using PowerShell, filling out documentations and later on I even got to dabble with
+					some frontend JavaScript. Back then I was more orientated as a backend developer.
 				</StyledColumn>
 			</StyledFlexContainer>
 			<StyledFlexContainer marginBottom>
@@ -33,12 +33,12 @@ const Experience = () => {
 				</StyledColumn>
 				<StyledColumn flexPercentage='65%'>
 					<StyledSmallestSubtitle>Full time - Software Engineer</StyledSmallestSubtitle>I was starting to get
-					interested in JavaScript, and how big companies function from the inside, thus I got invited to work
-					in Danske Bank. Working there gave me a broader perspective on how companies approach projects when
-					they are scaled up. Main work tools were a platform called BPM made by IBM. It relied on vanilla
-					JavaScript to produce a full solution for bank's internal system. Working there felt way different,
-					because we were working in bigger teams, developers usually were encouraged to specialise in their
-					own field, and communicating with clients for me was almost a daily thing.
+					interested in JavaScript, and how big companies operate on larger scale projects, thus I got invited
+					to work in Danske Bank. Working there gave me a broader perspective on how companies approach coding
+					solution. Main work tool was a platform called BPM made by IBM. It relied on vanilla JavaScript to
+					produce a full solution for bank's internal system. Working there felt quite different, because we
+					were working in bigger teams, developers usually were encouraged to specialize in their own field,
+					and communicating with clients, at least for me, was almost a daily thing.
 				</StyledColumn>
 			</StyledFlexContainer>
 			<StyledFlexContainer>
