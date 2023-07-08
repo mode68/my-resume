@@ -25,7 +25,7 @@ const Profile = () => {
 					<br />
 					<b>Age: </b>
 					<br />
-					27
+					29
 					<br />
 					<b>Location: </b>
 					<br />

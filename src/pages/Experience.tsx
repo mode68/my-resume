@@ -55,6 +55,17 @@ const Experience = () => {
 					I still have zero regrets, because I got to fulfill my dream.
 				</StyledColumn>
 			</StyledFlexContainer>
+			<StyledFlexContainer>
+				<StyledColumn flexPercentage='35%'>
+					<StyledSubtitle fontWeight='500'>Telia</StyledSubtitle>Dec 2021 - Now
+				</StyledColumn>
+				<StyledColumn flexPercentage='65%'>
+					<StyledSmallestSubtitle>Full time - Frotend Software Engineer</StyledSmallestSubtitle>After coming
+					back from Japan, I was eager to learn a modern JS framework. Since I had encoutered React before, in
+					Amidus, I decided to git it a go. Telia has accepted me and I'm having fun, learning something new
+					everyday.
+				</StyledColumn>
+			</StyledFlexContainer>
 		</Section>
 	);
 };

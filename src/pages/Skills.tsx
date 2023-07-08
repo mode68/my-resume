@@ -18,12 +18,16 @@ const Skills = () => {
 		{ name: 'React', rating: 4 },
 		{ name: 'Object Orientated Programming', rating: 4 },
 		{ name: 'Git', rating: 3 },
+		{ name: 'GitHub', rating: 3 },
+		{ name: 'BitBucket', rating: 3 },
 	];
 	const skills2 = [
+		{ name: 'TypeScript', rating: 3 },
 		{ name: 'Node.js', rating: 3 },
 		{ name: 'Scrum', rating: 3 },
+		{ name: 'Jira', rating: 2 },
+		{ name: 'Splunk', rating: 2 },
 		{ name: 'MongoDB', rating: 2 },
-		{ name: 'TypeScript', rating: 2 },
 		{ name: 'Express', rating: 1 },
 		{ name: 'Java', rating: 1 },
 		{ name: '.NET', rating: 1 },
