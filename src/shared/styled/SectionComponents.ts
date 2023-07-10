@@ -39,7 +39,7 @@ export const StyledSectionTitle = styled.h1`
 	color: ${colors.SECONDARY};
 `;
 
-export const StyledSectionSubTitle = styled.h3`
+export const StyledSectionSubTitle = styled.h2`
 	color: ${colors.TERTIARY};
 	font-weight: 200;
 	padding-bottom: ${spacing.SMALL};

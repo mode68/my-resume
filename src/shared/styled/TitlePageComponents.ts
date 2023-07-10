@@ -31,14 +31,14 @@ export const StyledSubtitle = styled.p`
 	font-size: 28px;
 `;
 
-export const StyledJumpToNavigationButton = styled.a`
+export const StyledJumpToNavigationButton = styled.button`
 	position: absolute;
 	bottom: 0;
 	right: 5%;
 	display: block;
 	background: ${colors.TERTIARY};
 	border: 2px solid ${colors.TERTIARY};
-	width: 120px;
+	width: 124px;
 	height: 80px;
 
 	&:hover {

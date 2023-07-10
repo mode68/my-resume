@@ -23,6 +23,7 @@ const Skills = () => {
 	];
 	const skills2 = [
 		{ name: 'TypeScript', rating: 3 },
+		{ name: 'Jest', rating: 3 },
 		{ name: 'Node.js', rating: 3 },
 		{ name: 'Scrum', rating: 3 },
 		{ name: 'Jira', rating: 2 },

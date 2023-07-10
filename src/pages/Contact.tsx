@@ -25,6 +25,12 @@ const Contact = () => {
 						github.com/mode68
 					</StyledContactLink>
 				</StyledLi>
+				<StyledLi>
+					<StyledContactLink href='https://github.com/modestas-kairys'>
+						<GitHub />
+						github.com/modestas-kairys
+					</StyledContactLink>
+				</StyledLi>
 			</StyledUl>
 		</Section>
 	);

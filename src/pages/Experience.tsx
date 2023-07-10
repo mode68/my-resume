@@ -43,27 +43,14 @@ const Experience = () => {
 			</StyledFlexContainer>
 			<StyledFlexContainer>
 				<StyledColumn flexPercentage='35%'>
-					<StyledSubtitle fontWeight='500'>Global Step Academy</StyledSubtitle>Dec 2019 - Jan 2021
-				</StyledColumn>
-				<StyledColumn flexPercentage='65%'>
-					<StyledSmallestSubtitle>Contract - English Second Language Teacher</StyledSmallestSubtitle>During
-					the summer of 2019 Japan's embassy introcuded first working visas in Lithuania. I viewed this as a
-					golden opportunity to fulfill my dream of living in Japan for an extended period of time. Finding
-					any type of work in Japan as a foreigner isn't easy, especially when you don't speak Japanese. I
-					opted to put a pause on my programming career and start working as an English teacher for children
-					under 12yo. Even though this long break without programming might have become a "dent" in my resume,
-					I still have zero regrets, because I got to fulfill my dream.
-				</StyledColumn>
-			</StyledFlexContainer>
-			<StyledFlexContainer>
-				<StyledColumn flexPercentage='35%'>
 					<StyledSubtitle fontWeight='500'>Telia</StyledSubtitle>Dec 2021 - Now
 				</StyledColumn>
 				<StyledColumn flexPercentage='65%'>
 					<StyledSmallestSubtitle>Full time - Frotend Software Engineer</StyledSmallestSubtitle>After coming
-					back from Japan, I was eager to learn a modern JS framework. Since I had encoutered React before, in
-					Amidus, I decided to git it a go. Telia has accepted me and I'm having fun, learning something new
-					everyday.
+					After coming back from Japan, I was eager to work with a modern JS framework. Since I had
+					encountered React before, in Amidus, I decided to give it a go. Telia has a wide tech stack, so I’m
+					learning something new everyday. Currently my focus is on code efficiency, to get better at
+					TypeScript, and I want to pick up NextJS in the near future.
 				</StyledColumn>
 			</StyledFlexContainer>
 		</Section>
