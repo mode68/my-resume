@@ -9,7 +9,7 @@ export const StyledSubtitle = styled.h2<{ fontWeight?: string }>`
 	font-weight: ${(props) => props.fontWeight};
 `;
 
-export const StyledSmallestSubtitle = styled.h4`
+export const StyledSmallestSubtitle = styled.h3`
 	color: ${colors.SECONDARY};
 	margin: 0px;
 `;

@@ -22,7 +22,7 @@ const Title = () => {
 				<StyledTitle>Modestas Kairys</StyledTitle>
 				<StyledSubtitle>resume</StyledSubtitle>
 			</StyledTitleContainer>
-			<StyledJumpToNavigationButton onClick={handleJumpToNavigationClick}>
+			<StyledJumpToNavigationButton type='button' onClick={handleJumpToNavigationClick}>
 				<StyledKeyboardArrowDown />
 			</StyledJumpToNavigationButton>
 		</StyledTitlePage>

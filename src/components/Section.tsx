@@ -14,9 +14,11 @@ const Section: React.FC<{ name: string; subtitle?: string; paddingBottom?: strin
 	const sectionRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
-		if (sectionRef.current) {
-			navContext.addSection(new SectionObj(name, sectionRef.current, false));
+		if (!sectionRef.current) {
+			return;
 		}
+
+		navContext.addSection(new SectionObj(name, sectionRef.current, false));
 	}, []);
 
 	return (

@@ -9,13 +9,14 @@ const Profile = () => {
 			<StyledFlexContainer>
 				<StyledColumn flexPercentage='30%'>
 					<StyledSubtitle>About me</StyledSubtitle>I specialize in frontend, but someday I want to become good
-					enough to be called an allround developer. The things I value most about programming is probably
-					predictability and stability. If something is wrong with your code, then it's a 99.9% probability
-					that you did something wrong. I feel like you rarely can find that in other lines of work and I'm
-					happy to call myself a software developer.
+					enough to be called an all-round developer. I think my colleagues would describe me as someone who
+					takes initiative, easy to work with, and a diligent worker. The things I value most about
+					programming is probably predictability and stability. If something is wrong with your code, then
+					it's a 99.9% probability that you did something wrong. I feel like you rarely can find that in other
+					lines of work and I'm happy to call myself a software developer.
 				</StyledColumn>
 				<StyledColumn flexPercentage='30%'>
-					<StyledProfilePic src={ProfilePic}></StyledProfilePic>
+					<StyledProfilePic src={ProfilePic} alt='profile picture'></StyledProfilePic>
 				</StyledColumn>
 				<StyledColumn flexPercentage='30%'>
 					<StyledSubtitle>Details</StyledSubtitle>
@@ -25,7 +26,7 @@ const Profile = () => {
 					<br />
 					<b>Age: </b>
 					<br />
-					27
+					29
 					<br />
 					<b>Location: </b>
 					<br />
