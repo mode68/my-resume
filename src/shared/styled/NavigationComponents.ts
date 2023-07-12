@@ -7,25 +7,29 @@ export const StyledNavBarContainer = styled.div<{ detached: boolean; isMobile: b
 		props.isMobile &&
 		css`
 			padding: ${spacing.SMALL};
+			width: auto;
+		`}
+	${(props) =>
+		!props.isMobile &&
+		css`
+			right: 55px;
+			z-index: 100;
 		`}
 	${(props) =>
 		props.detached &&
 		css`
 			position: fixed;
-			width: ${props.isMobile ? 'auto' : '100%'};
 			top: ${props.isMobile ? '0' : '10%'};
 		`}
     ${(props) =>
 		!props.detached &&
 		css`
 			position: absolute;
-			width: ${props.isMobile ? 'auto' : '100%'};
 		`}
 `;
 
 export const StyledNavBar = styled.div`
 	float: right;
-	margin-right: 5%;
 	border: 2px solid ${colors.TERTIARY};
 `;
 

@@ -12,8 +12,8 @@ function App() {
 	return (
 		<Layout>
 			<TitlePage />
+			<Navigation />
 			<StyledSectionContainer>
-				<Navigation />
 				<ProfilePage />
 				<EducationPage />
 				<ExperiencePage />
