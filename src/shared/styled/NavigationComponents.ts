@@ -12,7 +12,7 @@ export const StyledNavBarContainer = styled.div<{ detached: boolean; isMobile: b
 	${(props) =>
 		!props.isMobile &&
 		css`
-			right: 55px;
+			right: 50px;
 			z-index: 100;
 		`}
 	${(props) =>

@@ -34,7 +34,7 @@ export const StyledSubtitle = styled.p`
 export const StyledJumpToNavigationButton = styled.button`
 	position: absolute;
 	bottom: 0;
-	right: 5%;
+	right: 50px;
 	display: block;
 	background: ${colors.TERTIARY};
 	border: 2px solid ${colors.TERTIARY};
