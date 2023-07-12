@@ -47,10 +47,10 @@ const Experience = () => {
 				</StyledColumn>
 				<StyledColumn flexPercentage='65%'>
 					<StyledSmallestSubtitle>Full time - Frotend Software Engineer</StyledSmallestSubtitle>After coming
-					After coming back from Japan, I was eager to work with a modern JS framework. Since I had
-					encountered React before, in Amidus, I decided to give it a go. Telia has a wide tech stack, so I’m
-					learning something new everyday. Currently my focus is on code efficiency, to get better at
-					TypeScript, and I want to pick up NextJS in the near future.
+					back from Japan, I was eager to work with a modern JS framework. Since I had encountered React
+					before, in Amidus, I decided to give it a go. Telia has a wide tech stack, so I'm learning something
+					new everyday. Currently my focus is on code efficiency, to get better at TypeScript, and I want to
+					pick up NextJS in the near future.
 				</StyledColumn>
 			</StyledFlexContainer>
 		</Section>
